@@ -11,6 +11,11 @@ int main()
 
 void TowerMove(int Number, char *Source, char *Dest, char *Temp)
 {
+	if (Number < 1)
+	{
+		std::cout << "Idiot" << std::endl;
+		return;
+	}
 	if (Number == 1)
 	{
 		std::cout << "Move From " << Source << " To " << Dest << std::endl;
